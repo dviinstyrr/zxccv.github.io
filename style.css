@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;800;900&display=swap');
+
+:root {
+    --primary: rgb(30, 30, 30);
+    --fontsz: height: 6000px;
+}
+
+
+body {
+    background: var(--primary);
+    font-family: 'Poppins', sans-serif;
+}
+
+.nama {
+    height: var(--fontsz);
+    font-size: 50px;
+    color: white;
+    align-items: center;
+}
