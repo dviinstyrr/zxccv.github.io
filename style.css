@@ -1,19 +1,89 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;500;600;700;800;900&display=swap');
 
 :root {
+    --fontprimary: 'Poppins', sans-serif;
     --primary: rgb(30, 30, 30);
-    --fontsz: height: 6000px;
 }
 
+html {
+    overflow-y: scroll;
+}
 
 body {
+    margin: 0;
+    padding: 0;
     background: var(--primary);
-    font-family: 'Poppins', sans-serif;
+}
+
+.container-navbar {
+    background-color: #ffffff;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    padding-left: 100px;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    position: relative;
+    gap: 100%;
+
+}
+
+.logo {
+    font-family: var(--fontprimary);
+    font-size: 30px;
+    font-weight: 900;
+}
+
+.logo a {
+    text-decoration: none;
+    color: black;
+}
+
+.menu {
+    font-family: var(--fontprimary);
+    font-weight: 500;
+    font-size: 20px;
+    list-style: none;
+    align-items: center;
+    display: flex;
+}
+
+.menu li {
+    margin-right: 25px;
+}
+
+.menu li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.container-profile {
+    display: flex;
+    padding: 150px 0;
+    justify-content: center;
+    text-align: center;
+}
+
+.profile {
+    padding: 15px 0;
+}
+
+.foto img {
+    border-radius: 50%;
+    height: 200;
+    width: 200;
+    padding-bottom: 50px;
 }
 
 .nama {
-    height: var(--fontsz);
-    font-size: 50px;
+
+    font-family: var(--fontprimary);
+    font-size: 40px;
+    font-weight: 600;
     color: white;
-    align-items: center;
 }
