@@ -1,129 +1,135 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;500;600;700;800;900&display=swap');
 
 :root {
-    --fontprimary: 'Poppins', sans-serif;
-    --primary: rgb(255, 255, 255);
-    --gradient-color-1: #ef008f;
-    --gradient-color-2: #6ec3f4;
-    --gradient-color-3: #7038ff;
-    --gradient-color-4: #c9c9c9;
+  --fontprimary: 'Poppins', sans-serif;
+  --primary: rgb(255, 255, 255);
+  --gradient-color-1: #ef008f;
+  --gradient-color-2: #6ec3f4;
+  --gradient-color-3: #7038ff;
+  --gradient-color-4: #c9c9c9;
+}
+
+html {
+  overflow-x: hidden;
 }
 
 *,
 *:before,
 *:after {
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
+
 body {
-    background: var(--primary);
-    line-height: 1.5;
-    font-family: var(--fontprimary);
+  background: var(--primary);
+  line-height: 1.5;
+  font-family: var(--fontprimary);
 }
+
 a {
-    text-decoration: none;
-    color: #fff;
-    font-size: 16px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
 }
 
-.header {
-    background: rgb(30, 30, 30);
-    backdrop-filter: blur(9.5px);
-    -webkit-backdrop-filter: blur(9.5px);
-    width: 100%;
-    position: relative;
+.container-navbar {
+  background: rgb(0, 0, 0);
+  backdrop-filter: blur(9.5px);
+  -webkit-backdrop-filter: blur(9.5px);
+  width: 100%;
+  position: relative;
 }
 
-.header:after {
-    content: "";
-    clear: both;
-    display: block;
+.container-navbar:after {
+  content: "";
+  clear: both;
+  display: block;
 }
+
 
 .logo {
-    float: left;
-    padding: 26px 0 26px;
+  float: left;
+  padding: 26px 0 26px 0;
 }
 
 .logo a {
-    background: linear-gradient(
-        to right,
-        #9b64e2 20%,
-        #00affa 30%,
-        #eea040 70%,
-        #7cda4a 80%
-    );
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    text-fill-color: transparent;
-    background-size: 500% auto;
-    animation: textShine 5s ease-in-out infinite alternate;
-    font-size: 28px;
-    font-weight: 900;
-    letter-spacing: 2px;
-    display: block;
-    padding: 0 0 0 80px;
+  background: linear-gradient(to right,
+      #9b64e2 20%,
+      #00affa 30%,
+      #eea040 70%,
+      #7cda4a 80%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-fill-color: transparent;
+  background-size: 500% auto;
+  animation: textShine 5s ease-in-out infinite alternate;
+  font-size: 28px;
+  font-weight: 900;
+  letter-spacing: 2px;
+  display: block;
+  padding: 0 0 0 80px;
 }
 
 nav {
-    float: right;
+  float: right;
 }
 
-nav > ul {
-    float: left;
-    position: relative;
-    padding: 0 75px 0 0;
+nav>ul {
+  float: left;
+  position: relative;
+  padding: 0 75px 0 0;
 }
+
 nav li {
-    list-style: none;
-    float: left;
+  list-style: none;
+  float: left;
 }
 
 nav li a {
-    float: left;
-    padding: 35px;
+  float: left;
+  padding: 35px;
 }
 
 nav li a:hover {
-    background: #212121;
+  background: #212121;
 }
 
 nav li ul {
-    display: none;
+  display: none;
 }
 
 nav li:hover ul {
-    display: inline;
+  display: inline;
 }
 
 nav li li {
-    float: none;
+  float: none;
 }
 
 #menu-icon {
-    position: absolute;
-    right: 0;
-    top: 50%;
-    margin-top: -12px;
-    margin-right: 30px;
-    display: none;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  margin-top: -12px;
+  margin-right: 30px;
+  display: none;
 }
 
 #menu-icon span {
-    border: 2px solid #fff;
-    width: 30px;
-    margin-bottom: 5px;
-    display: block;
-    -webkit-transition: all 0.2s;
-    transition: all 0.1s;
+  border: 2px solid #fff;
+  width: 30px;
+  margin-bottom: 5px;
+  display: block;
+  -webkit-transition: all 0.2s;
+  transition: all 0.1s;
 }
 
 @media only screen and (max-width: 1170px) {
-  nav > ul > li > a {
+  nav>ul>li>a {
     padding: 35px 15px;
   }
 }
@@ -144,7 +150,7 @@ nav li li {
     overflow-y: scroll;
   }
 
-  .logo > a {
+  .logo>a {
     padding: 0 0 0 45px;
   }
 
@@ -191,167 +197,263 @@ nav li li {
     display: block;
   }
 
-  .header nav ul ul {
+  .container-navbar nav ul ul {
     display: block;
     position: static;
     background: none;
     border: none;
     padding: 0;
   }
-  .header nav a {
+
+  .container-navbar nav a {
     color: #fff;
     padding: 8px;
   }
-  .header nav a:hover {
+
+  .hecontainer-navbar nav a:hover {
     background: #212121;
     color: #ffffff;
   }
-  .header nav ul li li a:before {
+
+  .container-navbar nav ul li li a:before {
     content: "- ";
   }
 }
 
+
+
 /*Front Text*/
 
 .container-text {
-    margin: 250px 0 250px 0;
-    display: flex;
-    justify-content: center;
-    text-align: center;
+  margin: 250px 0 250px 0;
+  display: flex;
+  justify-content: center;
+  text-align: center;
 }
 
 .container-text .front-text {
-    color: white;
-    font-weight: 800;
-    font-size: 60px;
+  color: white;
+  font-weight: 800;
+  font-size: 60px;
 }
 
 
 
 @keyframes textShine {
-    0% {
-        background-position: 0% 70%;
-    }
-    100% {
-        background-position: 100% 50%;
-    }
+  0% {
+    background-position: 0% 70%;
+  }
+
+  100% {
+    background-position: 100% 50%;
+  }
 }
 
 /*Trial Text*/
 
 .container-text {
-    margin: 250px 0 250px 0;
-    display: flex;
-    text-align: center;
-    justify-content: center;
+  margin: 400px 0 500px 0;
+  display: flex;
+  text-align: center;
+  justify-content: center;
 }
 
 .container-proces .container-text .gradient-proces .gradient {
-    position: relative;
-  }
-
-.container-proces .container-text .gradient-proces
-.gradient .overlay-text {
-    position: absolute;
-    top: 0;
-    left: 0;
-    opacity: 1;
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
+  position: relative;
 }
 
-.container-proces .container-text .gradient-proces
-.gradient .title, .container-proces .container-proces .gradient-proces 
-.gradient .overlay-text {
-    font-weight: 800;
-    line-height: 0;
-  }
+.container-proces .container-text .gradient-proces .gradient .overlay-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 1;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+.container-proces .container-text .gradient-proces .gradient .title,
+.container-proces .container-proces .gradient-proces .gradient .overlay-text {
+  font-weight: 800;
+  line-height: 0;
+}
 
 .overlay-text {
-    font-weight: 800;
-    font-size: 50px;
+  font-weight: 800;
+  font-size: 50px;
 }
 
 .title {
-    text-align: center;
-    font-size: 50px;
-    padding-top: 37.6px;
-    color: rgb(0, 0, 0);
+  text-align: center;
+  font-size: 50px;
+  padding-top: 37.6px;
+  color: rgb(0, 0, 0);
 }
 
 
 .step-1 .overlay-text {
-	background-image: linear-gradient(90deg, var(--gradient-color-1), var(--gradient-color-2));
-	animation: animated-gradient-title-1 8s infinite;
+  background-image: linear-gradient(90deg, var(--gradient-color-1), var(--gradient-color-2));
+  animation: animated-gradient-title-1 8s infinite;
 }
 
 .step-2 .overlay-text {
-	background-image: linear-gradient(90deg, var(--gradient-color-2), var(--gradient-color-3));
-	animation: animated-gradient-title-2 8s infinite;
+  background-image: linear-gradient(90deg, var(--gradient-color-2), var(--gradient-color-3));
+  animation: animated-gradient-title-2 8s infinite;
 }
 
 .step-3 .overlay-text {
-	background-image: linear-gradient(90deg, var(--gradient-color-3), var(--gradient-color-1));
-	animation: animated-gradient-title-3 8s infinite;
+  background-image: linear-gradient(90deg, var(--gradient-color-3), var(--gradient-color-1));
+  animation: animated-gradient-title-3 8s infinite;
 }
 
 @keyframes animated-gradient-title-1 {
-	0%, 16.667%, 100% {
-		opacity: 1;
-	}
 
-	33.333%, 83.333% {
-		opacity: 0;
-	}
+  0%,
+  16.667%,
+  100% {
+    opacity: 1;
+  }
+
+  33.333%,
+  83.333% {
+    opacity: 0;
+  }
 }
 
 @keyframes animated-gradient-title-2 {
-	0%, 16.667%, 66.667%, 100% {
-                opacity:0
-        }
 
-	33.333%, 50% {
-		opacity: 1;
-	}
+  0%,
+  16.667%,
+  66.667%,
+  100% {
+    opacity: 0
+  }
+
+  33.333%,
+  50% {
+    opacity: 1;
+  }
 }
 
 @keyframes animated-gradient-title-3 {
-	0%, 50%, 100% {
-		opacity: 0;
-	}
 
-	66.667%, 83.333% {
-		opacity: 1;
-	}
+  0%,
+  50%,
+  100% {
+    opacity: 0;
+  }
+
+  66.667%,
+  83.333% {
+    opacity: 1;
+  }
+}
+
+
+.isi-sementara {
+  display: flex;
+  margin: 0;
+}
+
+.isi-sementara p {
+  font-size: 20px;
+  text-indent: 50px;
+  text-align: justify;
+  margin: 0 50px 500px 50px;
 }
 
 
 /*Footer*/
 
 .container-footer {
-     margin: 0;
-     padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
-.footer {
-     background-color: rgb(30, 30, 30);
-     backdrop-filter: blur(9.5px);
-     -webkit-backdrop-filter: blur(9.5px);
-     width: 100%;
-     position: relative;
+.container-footerr {
+  background: rgb(0, 0, 0);
+  backdrop-filter: blur(9.5px);
+  -webkit-backdrop-filter: blur(9.5px);
+  position: relative;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: auto;
+  width: 100vw;
+  padding-top: 40px;
+  color: #fff;
 }
 
 .footer:after {
-    content: "";
-    clear: both;
-    display: flex;
+  content: "";
+  clear: both;
+  display: flex;
 }
 
-.icon {
-    display: inline-block;
-    width: 1em;
-    height: 1em;
-    stroke-width: 0;
-    stroke: currentColor;
-    fill: white;
-  }
+.footer-isi {
+  max-width: 600px;
+  margin: 10px 10px 20px 10px;
+  line-height: 25px;
+  font-size: 14px;
+  color: white;
+}
+
+.footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.footer-content .footer-name {
+  font-size: 5rem;
+  font-weight: 900;
+  padding: 5px 0 0 0;
+}
+
+.socials {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 25px 0 80px 0;
+}
+
+.socials li {
+  margin: 0 10px;
+}
+
+/*footer Bottom*/
+
+.footer-bottom {
+  background: rgb(0, 4, 16);
+  backdrop-filter: blur(9.5px);
+  -webkit-backdrop-filter: blur(9.5px);
+  color: white;
+  width: 100vw;
+  padding: 15px;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+.footer-bottom p {
+  font-weight: 200;
+  justify-content: center;
+  text-align: center;
+  padding: 0 0 0 0;
+  font-size: 10px;
+  word-spacing: 2px;
+  letter-spacing: 1px;
+}
+
+.footer-bottom p a {
+  color: #ffffff;
+  font-size: 12px;
+  text-decoration: none;
+}
+
+.footer-bottom span {
+  text-transform: uppercase;
+  opacity: .4;
+  font-weight: 200;
+}
