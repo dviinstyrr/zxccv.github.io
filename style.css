@@ -35,6 +35,14 @@ a {
   font-size: 16px;
 }
 
+.container {
+  user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none
+}
+
 .container-navbar {
   background: rgb(0, 0, 0);
   backdrop-filter: blur(9.5px);
@@ -166,6 +174,11 @@ nav li li {
   display: flex;
   text-align: center;
   justify-content: center;
+  user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none
 }
 
 .container-proces .container-text .gradient-proces .gradient {
@@ -313,6 +326,11 @@ nav li li {
   justify-content: center;
   flex-direction: column;
   text-align: center;
+  user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none
 }
 
 .footer-content .footer-name {
@@ -354,6 +372,11 @@ nav li li {
   font-size: 10px;
   word-spacing: 2px;
   letter-spacing: 1px;
+  user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none
 }
 
 .footer-bottom p a {
