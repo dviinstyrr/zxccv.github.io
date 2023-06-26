@@ -496,6 +496,7 @@ nav li li {
 
   .section-container {
     margin: auto;
+    padding: 0 0 50px 0;
   }
 
   .container-text {
@@ -504,7 +505,8 @@ nav li li {
   }
 
   .gradient {
-    margin: 1px 0 0 0;
+    margin: 10px 0 0 0;
+    padding: 15.5px 0 0 0;
   }
 
   .gradient-proces {
@@ -514,11 +516,11 @@ nav li li {
   }
 
   .overlay-text {
-    font-size: 50px;
+    font-size: 70px;
   }
 
   .title {
-    font-size: 50px;
+    font-size: 70px;
   }
 
   .navbar {

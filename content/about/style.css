@@ -119,93 +119,6 @@ nav li li {
   transition: all 0.1s;
 }
 
-@media only screen and (max-width: 1170px) {
-  nav>ul>li>a {
-    padding: 30px 15px;
-  }
-}
-
-@media only screen and (min-width: 960px) {
-  nav {
-    display: block !important;
-  }
-}
-
-@media only screen and (max-width: 959px) {
-  nav {
-    display: none;
-    width: 100%;
-    clear: both;
-    float: none;
-    max-height: 400px;
-    overflow-y: scroll;
-  }
-
-  #menu-icon {
-    display: inline;
-    top: 45px;
-    right: 20px;
-    cursor: pointer;
-  }
-
-  #menu-icon.active .first {
-    transform: rotate(45deg);
-    -webkit-transform: rotate(45deg);
-    margin-top: 10px;
-  }
-
-  #menu-icon.active .second {
-    transform: rotate(135deg);
-    -webkit-transform: rotate(135deg);
-    position: relative;
-    top: -9px;
-  }
-
-  #menu-icon.active .third {
-    display: none;
-  }
-
-  nav {
-    padding: 10px;
-  }
-
-  nav ul {
-    float: none;
-  }
-
-  nav li {
-    float: none;
-    padding: 0 0 0 70px;
-  }
-
-  nav ul li a {
-    float: none;
-    padding: 8px;
-    display: block;
-  }
-
-  .container-navbar nav ul ul {
-    display: block;
-    position: static;
-    background: none;
-    border: none;
-    padding: 0;
-  }
-
-  .container-navbar nav a {
-    color: #fff;
-    padding: 8px;
-  }
-
-  .container-navbar nav a:hover {
-    background: #212121;
-    color: #ffffff;
-  }
-
-  .container-navbar nav ul li li a:before {
-    content: "- ";
-  }
-}
 
 /*PROFILE*/
 
@@ -338,4 +251,156 @@ nav li li {
   text-transform: uppercase;
   opacity: .4;
   font-weight: 200;
+}
+
+/*MEDIA SCREEN*/
+
+@media only screen and (max-width: 1170px) {
+  nav>ul>li>a {
+    padding: 35px 15px;
+  }
+}
+
+@media only screen and (min-width: 960px) {
+  nav {
+    display: block !important;
+  }
+}
+
+@media only screen and (max-width: 959px) {
+
+  .gradient {
+    display: flex;
+    margin: 50px 0 50px 0;
+  }
+
+  nav {
+    display: none;
+    width: 100%;
+    clear: both;
+    float: none;
+    max-height: 400px;
+    overflow-y: scroll;
+  }
+
+  .logo>a {
+    padding: 0 0 0 45px;
+  }
+
+  #menu-icon {
+    display: inline;
+    top: 45px;
+    right: 20px;
+    cursor: pointer;
+  }
+
+  #menu-icon.active .first {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    margin-top: 10px;
+  }
+
+  #menu-icon.active .second {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+    position: relative;
+    top: -9px;
+  }
+
+  #menu-icon.active .third {
+    display: none;
+  }
+
+  nav {
+    padding: 10px;
+  }
+
+  nav ul {
+    float: none;
+  }
+
+  nav li {
+    float: none;
+    padding: 0 0 0 70px;
+  }
+
+  nav ul li a {
+    float: none;
+    padding: 8px;
+    display: block;
+  }
+
+  .container-navbar nav ul ul {
+    display: block;
+    position: static;
+    background: none;
+    border: none;
+    padding: 0;
+  }
+
+  .container-navbar nav a {
+    color: #fff;
+    padding: 8px;
+  }
+
+  .hecontainer-navbar nav a:hover {
+    background: #212121;
+    color: #ffffff;
+  }
+
+  .container-navbar nav ul li li a:before {
+    content: "- ";
+  }
+}
+
+@media only screen and (max-width: 560px) {
+
+  .section-container {
+    margin: auto;
+    padding: 0 0 50px 0;
+  }
+
+  .container-text {
+    position: relative;
+    flex-direction: column;
+  }
+
+  .gradient {
+    margin: 10px 0 0 0;
+    padding: 15.5px 0 0 0;
+  }
+
+  .gradient-proces {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .overlay-text {
+    font-size: 70px;
+  }
+
+  .title {
+    font-size: 70px;
+  }
+
+  .navbar {
+    padding: 0 0 25px 0;
+  }
+
+  .isi-sementara p {
+    font-size: 20px;
+  }
+
+  .footer-isi {
+    font-size: 10px;
+    word-spacing: normal;
+    letter-spacing: normal;
+    padding: 10px 0 20px 0;
+  }
+
+  .footer-content p {
+    margin: 0 25px 0 25px;
+  }
+
 }
