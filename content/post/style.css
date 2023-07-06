@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;500;600;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;500;600;700;800;900&display=swap");
 
 :root {
-  --fontprimary: 'Poppins', sans-serif;
+  --fontprimary: "Poppins", sans-serif;
   --primary: rgb(255, 255, 255);
 }
 
@@ -51,11 +51,13 @@ a {
 }
 
 .logo a {
-  background: linear-gradient(to right,
-      #9b64e2 20%,
-      #00affa 30%,
-      #eea040 70%,
-      #7cda4a 80%);
+  background: linear-gradient(
+    to right,
+    #9b64e2 20%,
+    #00affa 30%,
+    #eea040 70%,
+    #7cda4a 80%
+  );
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -73,7 +75,7 @@ nav {
   float: right;
 }
 
-nav>ul {
+nav > ul {
   float: left;
   position: relative;
   padding: 0 75px 0 0;
@@ -147,16 +149,18 @@ nav li li {
   -moz-user-select: none;
   -ms-user-select: none;
   -khtml-user-select: none;
-  -webkit-user-select: none
+  -webkit-user-select: none;
 }
 
 .sec-text {
   margin: 0 0 0 10px;
-  background: linear-gradient(to right,
-      #9b64e2 20%,
-      #00affa 30%,
-      #eea040 70%,
-      #7cda4a 80%);
+  background: linear-gradient(
+    to right,
+    #9b64e2 20%,
+    #00affa 30%,
+    #eea040 70%,
+    #7cda4a 80%
+  );
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -220,7 +224,7 @@ nav li li {
   -moz-user-select: none;
   -ms-user-select: none;
   -khtml-user-select: none;
-  -webkit-user-select: none
+  -webkit-user-select: none;
 }
 
 .container-footerr {
@@ -308,14 +312,14 @@ nav li li {
 
 .footer-bottom span {
   text-transform: uppercase;
-  opacity: .4;
+  opacity: 0.4;
   font-weight: 200;
 }
 
 /*MEDIA SCREEN*/
 
 @media only screen and (max-width: 1170px) {
-  nav>ul>li>a {
+  nav > ul > li > a {
     padding: 35px 15px;
   }
 }
@@ -327,7 +331,6 @@ nav li li {
 }
 
 @media only screen and (max-width: 959px) {
-
   .gradient {
     display: flex;
     margin: 50px 0 50px 0;
@@ -342,7 +345,7 @@ nav li li {
     overflow-y: scroll;
   }
 
-  .logo>a {
+  .logo > a {
     padding: 0 0 0 45px;
   }
 
@@ -412,7 +415,15 @@ nav li li {
   }
 }
 
-@media only screen and (max-width: 560px) {
+@media only screen and (max-width: 480px) {
+  .section-container {
+    margin: auto;
+    padding: 0 0 50px 0;
+  }
+
+  .navbar {
+    padding: 0 0 25px 0;
+  }
 
   /*POST*/
 
@@ -462,12 +473,6 @@ nav li li {
     padding: 20px 30px 30px 30px;
   }
 
-
-  .section-container {
-    margin: auto;
-    padding: 0 0 50px 0;
-  }
-
   .container-text {
     position: relative;
     flex-direction: column;
@@ -510,6 +515,28 @@ nav li li {
   .footer-content p {
     margin: 0 25px 0 25px;
   }
+}
 
+@media only screen and (max-width: 340px) {
+  .navbar {
+    padding: 0 0 15px 0;
+  }
 
+  .logo {
+    margin: 0 0 0 -10px;
+  }
+
+  .container-navbar {
+    margin: 0;
+  }
+
+  #menu-icon {
+    position: absolute;
+    justify-content: center;
+  }
+
+  .section-container {
+    margin: auto;
+    padding: 0 0 50px 0;
+  }
 }
