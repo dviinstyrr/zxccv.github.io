@@ -200,8 +200,8 @@ nav li li {
   background-color: #202020;
   box-shadow: 0px 0px 15px 0px rgb(0, 0, 0, 0.5);
   border-radius: 20px;
-  margin: 420px 500px 0 150px;
-  padding: 60px 50px 60px 60px;
+  margin: 420px 700px 0 150px;
+  padding: 60px 60px 60px 60px;
 }
 
 .container-post4 {
@@ -210,8 +210,8 @@ nav li li {
   background-color: #202020;
   box-shadow: 0px 0px 15px 0px rgb(0, 0, 0, 0.5);
   border-radius: 20px;
-  margin: 420px 140px 0 900px;
-  padding: 50px 60px 94px 60px;
+  margin: 420px 0 0 900px;
+  padding: 50px 130px 150px 80px;
 }
 
 /*Footer*/
@@ -331,9 +331,10 @@ nav li li {
 }
 
 @media only screen and (max-width: 959px) {
+
   .gradient {
     display: flex;
-    margin: 50px 0 50px 0;
+    margin: 5px;
   }
 
   nav {
@@ -413,6 +414,41 @@ nav li li {
   .container-navbar nav ul li li a:before {
     content: "- ";
   }
+
+  .judul {
+    font-size: 50px;
+    margin: 50px 0 50px 0;
+    padding-left: 50px;
+  }
+
+  .container-post {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .container-post1 {
+    position: absolute;
+    max-width: 50%;
+    margin: 0 500px 0 50px;
+  }
+
+  .container-post2 {
+    max-width: 50%;
+    position: absolute;
+    margin: 0 50px 0 500px;
+  }
+
+  .container-post3 {
+    position: absolute;
+    max-width: 50%;
+    margin: 350px 500px 0 50px;
+  }
+
+  .container-post4 {
+    position: relative;
+    max-width: 50%;
+    margin: 380px 50px 0 500px ;
+    padding-bottom: 50px;
 }
 
 @media only screen and (max-width: 480px) {
@@ -421,66 +457,15 @@ nav li li {
     padding: 0 0 50px 0;
   }
 
-  .navbar {
-    padding: 0 0 25px 0;
-  }
-
-  /*POST*/
-
-  html {
-    overflow-x: hidden;
-    margin: 0;
-  }
-
-  .judul {
-    font-size: 30px;
-    margin: 10px 0 10px -80px;
-  }
-
-  .first-text {
-    font-weight: 800;
-  }
-
-  .sec-text {
-    font-weight: 800;
-  }
-
-  .container-post {
-    flex-direction: column;
-    display: flex;
-    font-size: 10px;
-  }
-
-  .container-post1 {
-    display: flex;
-    margin: 0 170px 0 30px;
-    padding: 20px 30px 30px 20px;
-  }
-
-  .container-post2 {
-    display: flex;
-    margin: 20px 30px 10px 110px;
-  }
-
-  .container-post3 {
-    display: flex;
-    margin: 370px 230px 0 30px;
-  }
-
-  .container-post4 {
-    display: flex;
-    margin: 430px 50px 0 360px;
-    padding: 20px 30px 30px 30px;
-  }
-
   .container-text {
     position: relative;
     flex-direction: column;
   }
 
   .gradient {
-    margin: 10px 0 0 0;
+    margin: 0;
     padding: 15.5px 0 0 0;
+    transition: ease all 0.1s;
   }
 
   .gradient-proces {
@@ -491,6 +476,7 @@ nav li li {
 
   .overlay-text {
     font-size: 70px;
+    margin: 0 0 0 0;
   }
 
   .title {
@@ -515,6 +501,43 @@ nav li li {
   .footer-content p {
     margin: 0 25px 0 25px;
   }
+
+  .judul {
+    font-size: 50px;
+    margin: 50px 0 50px 0;
+    padding-left: 50px;
+  }
+
+  .container-post {
+    position: relative;
+    flex-direction: column;
+    margin: 50px 0 1100px 0;
+  }
+
+  .container-post1 {
+    position: absolute;
+    max-width: 100%;
+    margin: 0 50px 0 50px;
+  }
+
+  .container-post2 {
+    max-width: 100%;
+    position: absolute;
+    margin: 330px 50px 0 50px;
+  }
+
+  .container-post3 {
+    position: absolute;
+    max-width: 100%;
+    margin: 730px 50px 0 50px;
+  }
+
+  .container-post4 {
+    position: absolute;
+    max-width: 100%;
+    margin: 1150px 50px 0 50px ;
+}
+
 }
 
 @media only screen and (max-width: 340px) {
@@ -539,4 +562,66 @@ nav li li {
     margin: auto;
     padding: 0 0 50px 0;
   }
+
+  .container-text {
+    position: relative;
+    flex-direction: column;
+  }
+
+  .gradient {
+    margin: 3px 0 0 0;
+    padding: 2px 0 0 0;
+  }
+
+  .gradient-proces {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .overlay-text {
+    font-size: 50px;
+    margin: 1px 0 0 0;
+  }
+
+  .title {
+    font-size: 50px;
+  }
+
+  .judul {
+    font-size: 50px;
+    margin: 50px 0 50px 0;
+    padding-left: 50px;
+  }
+
+  .container-post {
+    position: relative;
+    flex-direction: column;
+    margin: 50px 0 1100px 0;
+  }
+
+  .container-post1 {
+    position: absolute;
+    max-width: 80%;
+    margin: 0 50px 0 40px;
+  }
+
+  .container-post2 {
+    position: absolute;
+    max-width: 80%;
+    margin: 430px 30px 0 40px;
+  }
+
+  .container-post3 {
+    position: absolute;
+    max-width: 80%;
+    margin: 730px 50px 0 50px;
+  }
+
+  .container-post4 {
+    position: absolute;
+    max-width: 100%;
+    margin: 1150px 50px 0 50px ;
+  }
+
 }
